@@ -14,7 +14,9 @@ export default defineConfig({
     },
   },
   plugins: [
-    vue(),
+    vue({
+      reactivityTransform: true, // 开启实验性响应性语法糖
+    }),
     Pages(),
     Unocss({
       presets: [
