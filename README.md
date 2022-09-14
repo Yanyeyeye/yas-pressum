@@ -1,16 +1,23 @@
-# Vue 3 + TypeScript + Vite
+# Vue 3 - TypeScript - Vite
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Profile
 
-## Recommended IDE Setup
+This template was created by `cnpm create Vite` and used some awesome vite pulgins. It is also my framework template which is used by starting new project. Here are some characteristic in this lite:
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- 💫`unplugin-auto-import`: This plugin will help you register the function which you used in this project automatically. Check out [here](https://github.com/antfu/unplugin-auto-import) to get more infomation.
+- :books:`vite-plugin-pages`: Do you want to use vue-router more elegant? This plugin will help you generate routes and the only thing you need to put every pages you used in `./src/pages/`.Here is the [documentation](https://github.com/hannoeru/vite-plugin-pages).
+- :lollipop:`unplugin-vue-components`: On-demand components auto import for Vue. All you need to do is just start coding without any import. Check out [here](https://github.com/antfu/unplugin-vue-components) to get more infomation.
+- :gem:`UnoCSS`: [Atomic CSS engine not a framework](https://github.com/unocss/unocss)
+  - :facepunch:`@unocss/reset`: Using 'tailwind.css' to initialize the CSS.
+  - 😃`@iconify-json/carbon @iconify-json/mdi`: Use any icon as a class utility.
 
-## Type Support For `.vue` Imports in TS
+  *This plugin is experimental so make the prepartion when there is a devastating change.*
+- :helicopter:`VUEuse`: Yes it is. A collection of utility functions based on Composition API.Try this convenient [plugin](https://vueuse.org/).
+- 🦾 `TypeScript`: Full TypeScript support.
+- :calling: `Netlify`: Deploy on Netlify.
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+## How to start ?
 
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
-
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+  1. use `ni` to install the dependence.
+     - if you does not know about the command like `ni`.Pleause check out [here](https://github.com/antfu/ni) for more information.
+  2. use `nr dev` to start.
