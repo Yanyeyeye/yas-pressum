@@ -2,7 +2,9 @@ import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 import routes from '~pages'
-import './style.css'
+
+import '@unocss/reset/tailwind.css' // 导入tailwind来重置网页先前的样式
+import './styles/main.css'
 import 'uno.css'
 
 const app = createApp(App)

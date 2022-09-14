@@ -17,7 +17,7 @@ interface Branch {
 }
 
 function init() {
-  ctx.strokeStyle = '#000'
+  ctx.strokeStyle = 'rgba(147,149,152,0.5)'
 
   step({
     start: { x: WIDTH / 2, y: HEIGHT },
@@ -33,21 +33,21 @@ const pendingTask: Function[] = []
 function step(b: Branch, depth = 0) {
   const end = getEndPoint(b)
   drawBranch(b)
-  if (depth < 3 || Math.random() < 0.5) {
+  if (depth < 4 || Math.random() < 0.5) {
     pendingTask.push(() => {
       step({
         start: end,
-        length: b.length + (Math.random() * 10 - 5),
-        theta: b.theta - 0.3 * Math.random(),
+        length: b.length + (Math.random() * 10 - 3),
+        theta: b.theta - 0.2 * Math.random(),
       }, depth + 1)
     })
   }
-  if (depth < 3 || Math.random() < 0.5) {
+  if (depth < 4 || Math.random() < 0.5) {
     pendingTask.push(() => {
       step({
         start: end,
-        length: b.length + (Math.random() * 10 - 5),
-        theta: b.theta + 0.3 * Math.random(),
+        length: b.length + (Math.random() * 10 - 3),
+        theta: b.theta + 0.2 * Math.random(),
       }, depth + 1)
     })
   }
@@ -63,7 +63,7 @@ let framesCount = 0
 function startFrame() {
   requestAnimationFrame(() => {
     framesCount++
-    if (framesCount % 5 === 0) // 5帧画一次
+    if (framesCount % 3 === 0) // 5帧画一次
       frame()
     startFrame()
   })
@@ -95,7 +95,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <canvas ref="el" width="600" height="600" />
+  <canvas ref="el" width="600" height="600" border />
 </template>
 
 <style scoped>
