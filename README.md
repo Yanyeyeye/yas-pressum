@@ -11,10 +11,10 @@ This template was created by `cnpm create Vite` and used some awesome vite pulgi
   - :facepunch:`@unocss/reset`: Using 'tailwind.css' to initialize the CSS.
   - 😃`@iconify-json/carbon @iconify-json/mdi`: Use any icon as a class utility.
 
-  <u>This plugin is experimental so make the prepartion when there is a devastating change.</u>
+  *This plugin is experimental so make the prepartion when there is a devastating change.*
 - :helicopter:`VUEuse`: Yes it is. A collection of utility functions based on Composition API.Try this convenient [plugin](https://vueuse.org/).
 - 🦾 `TypeScript`: Full TypeScript support.
-- :calling: `Netlify`: Deploy on Netlify.Here is the URL: (https://tiny-daifuku-a693e9.netlify.app)
+- :calling: `Netlify`: Deploy on Netlify.
 
 ## How to start ?
 
